@@ -11,7 +11,7 @@ int	main(int argc, char **argv) {
 
 	for (int i = 1; i < argc; i++)
 		msg.append(argv[i]);
-	for (char c : msg)
-		std::cout << (char)toupper(c);
+	for (int i = 0; i < msg.length(); i++)
+		std::cout << (char)toupper(msg[i]);
 	std::cout << std::endl;
 }

@@ -3,7 +3,7 @@ NAME =			megaphone
 
 #Compiler
 CC = 			clang++
-CFLAGS = 		-Wall -Wextra -Werror -std=c++11
+CFLAGS = 		-Wall -Wextra -Werror -std=c++98
 LIBRARIES =
 CFLAG = 		-c
 OFLAG =			-o
