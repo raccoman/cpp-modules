@@ -54,6 +54,7 @@ void Account::_displayTimestamp()
 			  << std::setw(2) << utc_tm.tm_hour
 			  << std::setw(2) << utc_tm.tm_min
 			  << std::setw(2) << utc_tm.tm_sec << "] ";
+	//std::cout << "[19920104_091532] ";
 }
 
 int Account::getNbAccounts()
