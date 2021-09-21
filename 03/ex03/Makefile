@@ -1,5 +1,5 @@
 #Name
-NAME =			scavtrap
+NAME =			diamondtrap
 
 #Compiler
 CC = 			clang++
@@ -30,7 +30,9 @@ HEADERS_DIR =	./include
 #Files
 FILES =			main.cpp \
 				ClapTrap.cpp \
-				ScavTrap.cpp
+				ScavTrap.cpp \
+				FragTrap.cpp \
+				DiamondTrap.cpp
 
 #Srcs
 SRCS =			$(foreach FILE, $(FILES), $(shell find $(SOURCES_DIR) -name $(FILE)))

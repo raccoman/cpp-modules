@@ -66,9 +66,9 @@ int main() {
 			std::cout << "|----------|----------|----------|----------|" << std::endl;
 			for (int i = 0; i < phonebook.getCount(); ++i) {
 				std::cout << "|" << std::setw(10) << i;
-				std::cout << "|" << std::setw(10) << phonebook.getContact(i).getName();
-				std::cout << "|" << std::setw(10) << phonebook.getContact(i).getSurname();
-				std::cout << "|" << std::setw(10) << phonebook.getContact(i).getNickname() << "|" << std::endl;
+				std::cout << "|" << std::setw(10) << phonebook.getContact(i).getName().substr(0, 10);
+				std::cout << "|" << std::setw(10) << phonebook.getContact(i).getSurname().substr(0, 10);
+				std::cout << "|" << std::setw(10) << phonebook.getContact(i).getNickname().substr(0, 10) << "|" << std::endl;
 				std::cout << "|----------|----------|----------|----------|" << std::endl;
 			}
 
