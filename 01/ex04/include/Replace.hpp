@@ -1,15 +1,15 @@
-#ifndef KAREN_HPP
-#define KAREN_HPP
+#ifndef REPLACE_HPP
+#define REPLACE_HPP
 
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <sys/stat.h>
 
-class Karen {
+class Replace {
 public:
-	Karen();
-	~Karen();
+	Replace();
+	~Replace();
 	bool setFile(const std::string &name);
 	bool run(const std::string &s1, const std::string &s2);
 private:
