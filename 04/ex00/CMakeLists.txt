@@ -4,4 +4,4 @@ project(cpp_modules)
 set(CMAKE_CXX_STANDARD 98)
 
 include_directories(include)
-add_executable(cpp_modules src/main.cpp src/Animal.cpp src/Dog.cpp src/Cat.cpp src/WrongAnimal.cpp src/WrongCat.cpp ../ex01/src/Brain.cpp ../ex01/src/Brain.hpp)
+add_executable(cpp_modules src/main.cpp src/Animal.cpp src/Dog.cpp src/Cat.cpp src/WrongAnimal.cpp src/WrongCat.cpp)

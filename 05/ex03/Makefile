@@ -1,5 +1,5 @@
 #Name
-NAME =			materia
+NAME =			bureaucrat
 
 #Compiler
 CC = 			clang++
@@ -29,11 +29,12 @@ HEADERS_DIR =	./include
 
 #Files
 FILES =			main.cpp \
-				AMateria.cpp \
-				Character.cpp \
-				Cure.cpp \
-				Ice.cpp \
-				MateriaSource.cpp
+				Bureaucrat.cpp \
+				Form.cpp \
+				ShrubberyCreationForm.cpp \
+				RobotoMyRequestForm.cpp \
+				PresidentialPardonForm.cpp \
+				Intern.cpp
 
 
 #Srcs

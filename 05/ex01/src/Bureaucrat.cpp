@@ -1,23 +1,16 @@
-//
-// Created by Roberto Boldini on 9/22/21.
-//
-
-#include "Bureaucrat.hpp"
+#include <Bureaucrat.hpp>
 
 Bureaucrat::Bureaucrat() {
-	std::cout << "Default constructor called." << std::endl;
 }
 
 Bureaucrat::~Bureaucrat() {
-	std::cout << "Default destructor called." << std::endl;
 }
 
 Bureaucrat::Bureaucrat(const Bureaucrat& b) : _name(b.getName()) {
 	*this = b;
 }
 
-Bureaucrat& Bureaucrat::operator= (const Bureaucrat& b)
-{
+Bureaucrat& Bureaucrat::operator= (const Bureaucrat& b) {
 	_grade = b.getGrade();
 	return *this;
 }
@@ -30,6 +23,8 @@ Bureaucrat::Bureaucrat(std::string name, unsigned int grade) : _name(name) {
 		throw GradeTooLowException();
 	else if (grade < 1)
 		throw GradeTooHighException();
+
+	_grade = grade;
 }
 
 void Bureaucrat::incrementGrade()
@@ -47,6 +42,18 @@ void Bureaucrat::decrementGrade()
 	_grade++;
 	std::cout << "Grade of bureaucrat " + getName() + " decremented to " << getGrade() << std::endl;
 }
+
+void Bureaucrat::signForm(Form form) {
+
+	if (_grade > form.getSignGrade()) {
+		std::cout << _name << " cannot sign " << form.getName() << " because his grade is too low." << std::endl;
+		return;
+	}
+
+	form.beSigned(*this);
+	std::cout << _name << " signs " << form.getName() << "." << std::endl;
+}
+
 
 const char* Bureaucrat::GradeTooHighException::what() const throw() {
 	return "Grade is too high";
