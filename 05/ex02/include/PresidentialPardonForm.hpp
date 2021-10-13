@@ -1,7 +1,7 @@
 #ifndef PRESIDENTIALPARDONFORM_HPP
 #define PRESIDENTIALPARDONFORM_HPP
 
-#include <Bureaucrat.hpp>
+#include <Convertable.hpp>
 #include <iostream>
 #include <cstdlib>
 

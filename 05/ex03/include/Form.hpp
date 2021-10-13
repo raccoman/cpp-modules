@@ -1,7 +1,7 @@
 #ifndef FORM_HPP
 #define FORM_HPP
 
-#include <Bureaucrat.hpp>
+#include <Convertable.hpp>
 #include <iostream>
 
 class Bureaucrat;
